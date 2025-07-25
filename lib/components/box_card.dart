@@ -1,3 +1,4 @@
+import 'package:alubank/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
 
 class BoxCard extends StatelessWidget {
@@ -12,7 +13,7 @@ class BoxCard extends StatelessWidget {
       decoration: BoxDecoration(
         boxShadow: kElevationToShadow[3],
         borderRadius: BorderRadius.circular(10.0),
-        color: Theme.of(context).cardColor
+        color: ThemeColors.boxCardColor
       ),
       child: boxContent,
     );
