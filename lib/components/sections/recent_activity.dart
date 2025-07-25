@@ -1,4 +1,5 @@
 import 'package:alubank/components/box_card.dart';
+import 'package:alubank/components/content_division.dart';
 import 'package:alubank/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -17,13 +18,15 @@ class RecentActivity extends StatelessWidget {
 }
 
 class _RecentActivityContent extends StatelessWidget {
-  const _RecentActivityContent({super.key});
+  const _RecentActivityContent();
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               children: [
@@ -43,9 +46,48 @@ class _RecentActivityContent extends StatelessWidget {
                 ),
               ],
             ),
-            Row(),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 4.0),
+                  child: ColorDot(color: ThemeColors.recentActivity['income']),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Entrada'),
+                    Text(
+                      '\$9932.35',
+                      style: Theme.of(context).textTheme.bodyLarge,
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ],
         ),
+        Padding(
+          padding: const EdgeInsets.only(top: 16.0, bottom: 8.0),
+          child: Text('Limite de gastos: \$432.93'),
+        ),
+        Container(
+          clipBehavior: Clip.hardEdge,
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+          child: LinearProgressIndicator(
+            value: 0.5,
+            minHeight: 8,
+            color: ThemeColors.primaryColor,
+            backgroundColor: ThemeColors.divisionBackgroundColor,
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+          child: ContentDivision(),
+        ),
+        Text(
+          'Esse mês você gastou \$1500.00 com jogos. Tente abaixar esse custo!',
+        ),
+        TextButton(onPressed: () {}, child: Text('Diga-me como', style: TextStyle(color: ThemeColors.primaryColor, fontSize: 16),)),
       ],
     );
   }
