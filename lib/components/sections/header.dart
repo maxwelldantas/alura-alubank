@@ -13,7 +13,7 @@ class Header extends StatelessWidget {
           end: Alignment.bottomCenter,
           colors: ThemeColors.headerGradient,
         ),
-        borderRadius: BorderRadius.vertical(bottom: Radius.circular(10))
+        borderRadius: BorderRadius.vertical(bottom: Radius.circular(10)),
       ),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(16.0, 80.0, 16.0, 16.0),

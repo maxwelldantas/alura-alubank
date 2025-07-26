@@ -8,12 +8,12 @@ class BoxCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Ink(
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         boxShadow: kElevationToShadow[3],
         borderRadius: BorderRadius.circular(10.0),
-        color: ThemeColors.boxCardColor
+        color: ThemeColors.boxCardColor,
       ),
       child: boxContent,
     );

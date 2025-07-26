@@ -9,9 +9,7 @@ class ContentDivision extends StatelessWidget {
     return Container(
       height: 1,
       decoration: BoxDecoration(
-        border: Border.all(
-          color: ThemeColors.division
-        )
+        border: Border.all(color: ThemeColors.division),
       ),
     );
   }

@@ -87,7 +87,13 @@ class _RecentActivityContent extends StatelessWidget {
         Text(
           'Esse mês você gastou \$1500.00 com jogos. Tente abaixar esse custo!',
         ),
-        TextButton(onPressed: () {}, child: Text('Diga-me como', style: TextStyle(color: ThemeColors.primaryColor, fontSize: 16),)),
+        TextButton(
+          onPressed: () {},
+          child: Text(
+            'Diga-me como',
+            style: TextStyle(color: ThemeColors.primaryColor, fontSize: 16),
+          ),
+        ),
       ],
     );
   }

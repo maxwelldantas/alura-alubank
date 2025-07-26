@@ -11,10 +11,6 @@ class Alubank extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Alubank',
-      theme: myTheme,
-      home: Home()
-    );
+    return MaterialApp(title: 'Alubank', theme: myTheme, home: Home());
   }
 }

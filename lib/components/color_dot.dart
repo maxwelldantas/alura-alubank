@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ColorDot extends StatelessWidget {
   final Color? color;
+
   const ColorDot({super.key, required this.color});
 
   @override

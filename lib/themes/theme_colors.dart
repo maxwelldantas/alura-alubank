@@ -14,5 +14,4 @@ class ThemeColors {
   static const boxCardColor = Color.fromRGBO(75, 75, 75, 1);
   static const division = Color.fromRGBO(166, 166, 166, 1);
   static const divisionBackgroundColor = Color.fromRGBO(108, 108, 108, 1);
-
 }
